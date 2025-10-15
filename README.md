@@ -35,32 +35,13 @@ pnpm run dev
 
 ## 部署说明
 
-### Docker Compose（推荐）
 
-仓库已经内置 `Dockerfile` 与 `docker-compose.yml`，可直接通过以下命令完成构建与启动：
-
-```bash
-docker compose up -d --build
-```
-
-启动后访问 `http://localhost:8080` 即可看到应用。若需停止容器可执行：
-
-```bash
-docker compose down
-```
-
-如需修改监听端口或添加反向代理规则，可在 `docker-compose.yml` 或 `nginx.conf` 中调整。
-
-### 手动构建静态文件
-
-若希望将构建产物部署到其他静态服务器，可在本地安装依赖并执行：
 
 ```bash
 pnpm install
 pnpm run build
 ```
 
-随后将生成的 `dist/` 目录交由 Nginx、Vercel、OSS 等静态资源平台托管。
 
 ## 数据与算法局限
 
