@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  fogmon-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fogmon-web
+    ports:
+      - '8080:80'
+    restart: unless-stopped
