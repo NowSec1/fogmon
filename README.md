@@ -35,14 +35,13 @@ pnpm run dev
 
 ## 部署说明
 
-项目支持容器化部署，推荐通过 Docker Compose 启动前端与 Nginx。构建步骤如下：
+
 
 ```bash
 pnpm install
 pnpm run build
 ```
 
-将 `dist/` 目录交由 Nginx 或静态资源服务器托管即可。未来可根据需要加入后端 API 或缓存策略。
 
 ## 数据与算法局限
 
