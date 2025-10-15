@@ -14,7 +14,7 @@
 ## 技术栈
 
 - 前端：React 19、TypeScript、Vite、Tailwind CSS、shadcn 风格组件（自定义样式）、Recharts、Lucide Icons。
-- 数据：Open-Meteo Forecast API（1 小时分辨率）。
+- 数据：Open-Meteo Forecast API（1 小时分辨率，风速单位请求为 m/s 以匹配雾风险模型）。
 
 ## 快速开始
 

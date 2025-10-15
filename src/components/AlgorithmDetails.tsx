@@ -5,6 +5,9 @@ export const AlgorithmDetails = () => (
       <p className="mt-2">
         系统依据 Open-Meteo API 提供的温度、露点、相对湿度、风速及天气现象编码，对日出前后两小时内的逐小时气象数据进行分析：
       </p>
+      <p className="mt-2 text-xs text-slate-500">
+        （请求参数已将风速单位固定为 m/s，使启发式阈值如 3 m/s、5 m/s 等与实际数据保持一致。）
+      </p>
       <ul className="mt-3 list-inside list-disc space-y-2">
         <li>
           <span className="font-medium text-slate-700">晨雾（辐射雾）</span> 评估强调高湿度、温度接近露点、微风以及温度下降趋势，结合天气编码触发的雾象提示。

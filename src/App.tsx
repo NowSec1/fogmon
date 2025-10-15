@@ -39,6 +39,7 @@ const fetchWeatherData = async (
     latitude: location.latitude.toString(),
     longitude: location.longitude.toString(),
     timezone: 'auto',
+    windspeed_unit: 'ms',
     forecast_days: '3',
     past_days: '1',
     hourly:
